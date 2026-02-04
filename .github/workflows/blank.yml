@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull ghcr.io/flannel-io/flannel:v0.28.0
+          docker pull ghcr.io/flannel-io/flannel-cni-plugin:v1.8.0-flannel1
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag ghcr.io/flannel-io/flannel:v0.28.0 registry.cn-hangzhou.aliyuncs.com/opskyrie/flannel:v0.28.0
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/flannel:v0.28.0 
+          docker tag ghcr.io/flannel-io/flannel-cni-plugin:v1.8.0-flannel1 registry.cn-hangzhou.aliyuncs.com/opskyrie/flannel-cni-plugin:v1.8.0-flannel1
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/flannel-cni-plugin:v1.8.0-flannel1
