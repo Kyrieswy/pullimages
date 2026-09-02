@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull ubuntu:22.04
+          docker pull centos:7
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag ubuntu:22.04 registry.cn-hangzhou.aliyuncs.com/opskyrie/ubuntu:22.04
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/ubuntu:22.04
+          docker tag centos:7 registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:7
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:7
