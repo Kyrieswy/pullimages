@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull cnych/jenkins:jnlp10
+          docker pull cnych/jenkins:jnlp6
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag cnych/jenkins:jnlp10 registry.cn-hangzhou.aliyuncs.com/opskyrie/cnych-jenkins:jnlp10
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/cnych-jenkins:jnlp10
+          docker tag cnych/jenkins:jnlp6 registry.cn-hangzhou.aliyuncs.com/opskyrie/cnych-jenkins:jnlp6
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/cnych-jenkins:jnlp6
