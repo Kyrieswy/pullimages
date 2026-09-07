@@ -29,12 +29,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           docker pull centos:8
-#          docker pull docker:latest
-#          docker pull cnych/kubectl
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-#          docker tag okteto/golang:1.25 registry.cn-hangzhou.aliyuncs.com/opskyrie/okteto-golang.1.25
-#          docker tag docker:latest registry.cn-hangzhou.aliyuncs.com/opskyrie/docker:latest
           docker tag centos:8 registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:8
-#          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/okteto-golang.1.25
-#          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/docker:latest
           docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:8
