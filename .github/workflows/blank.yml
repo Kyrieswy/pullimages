@@ -28,11 +28,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull okteto/golang.1.25
+          docker pull okteto/golang:1.25
           docker pull docker:latest
           docker pull cnych/kubectl
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag okteto/golang.1.25 registry.cn-hangzhou.aliyuncs.com/opskyrie/okteto-golang.1.25
+          docker tag okteto/golang:1.25 registry.cn-hangzhou.aliyuncs.com/opskyrie/okteto-golang.1.25
           docker tag docker:latest registry.cn-hangzhou.aliyuncs.com/opskyrie/docker:latest
           docker tag cnych/kubectl registry.cn-hangzhou.aliyuncs.com/opskyrie/cnych-kubectl
           docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/okteto-golang.1.25
