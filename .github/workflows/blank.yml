@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull centos:8
+          docker pull kindest/node:v1.23.5
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag centos:8 registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:8
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/centos:8
+          docker tag kindest/node:v1.23.5 registry.cn-hangzhou.aliyuncs.com/opskyrie/kindest-node:v1.23.5
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/kindest-node:v1.23.5
