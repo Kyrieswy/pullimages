@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull golang:1.22
+          docker pull gcr.io/distroless/static:nonroot
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag golang:1.22 registry.cn-hangzhou.aliyuncs.com/opskyrie/golang:1.22
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/golang:1.22
+          docker tag gcr.io/distroless/static:nonroot registry.cn-hangzhou.aliyuncs.com/opskyrie/static:nonroot
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/static:nonroot
