@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull kindest/node:v1.23.5
+          docker pull golang:1.22
           docker login --username=swyyy --password=kyrie@123 registry.cn-hangzhou.aliyuncs.com
-          docker tag kindest/node:v1.23.5 registry.cn-hangzhou.aliyuncs.com/opskyrie/kindest-node:v1.23.5
-          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/kindest-node:v1.23.5
+          docker tag golang:1.22 registry.cn-hangzhou.aliyuncs.com/opskyrie/golang:1.22
+          docker push registry.cn-hangzhou.aliyuncs.com/opskyrie/golang:1.22
